@@ -2,10 +2,7 @@
 
 function choose_multiples_of_three(collection) {
 
-    collection.map((element)=>{
-          return element = element*3;
-   });
-   return collection;
+     return collection.filter(e => e % 3 == 0);
 }
 
 module.exports = choose_multiples_of_three;
